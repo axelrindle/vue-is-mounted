@@ -1,0 +1,30 @@
+{
+    "name": "vue-is-mounted",
+    "version": "1.0.0",
+    "description": "A simple Vue.js mixin for telling whether a component has been mounted.",
+    "main": "index.js",
+    "files": [
+        "index.js"
+    ],
+    "scripts": {
+        "test": "serve"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/axelrindle/vue-is-mounted.git"
+    },
+    "keywords": [
+        "vue.js",
+        "vue",
+        "mounted"
+    ],
+    "author": "Axel Rindle <axel.rindle@gmx.de>",
+    "license": "MIT",
+    "bugs": {
+        "url": "https://github.com/axelrindle/vue-is-mounted/issues"
+    },
+    "homepage": "https://github.com/axelrindle/vue-is-mounted#readme",
+    "devDependencies": {
+        "serve": "^11.0.0"
+    }
+}

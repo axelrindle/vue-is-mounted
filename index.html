@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>vue-is-mounted</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.4/css/bulma.min.css">
+    <style media="screen">
+      html, body {
+        overflow: hidden;
+      }
+    </style>
+  </head>
+  <body>
+    <section class="hero is-primary is-bold is-fullheight">
+      <div class="hero-body">
+        <div class="container has-text-centered" id="app">
+          <h1 class="title is-1">
+            vue-is-mounted
+          </h1>
+          <p class="subtitle is-4">
+            A simple Vue.js mixin for telling whether a component has been mounted.
+          </p>
+          <p class="subtitle is-4">
+            {{ mountedText }}
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <script src="index.js" charset="utf-8"></script>
+    <script type="text/javascript">
+      new Vue({
+        el: '#app',
+        mixins: [ vueIsMounted ],
+        computed: {
+          mountedText() {
+            return this.isMounted ? 'We are mounted.' : 'We are not mounted yet.'
+          }
+        }
+      });
+    </script>
+  </body>
+</html>
