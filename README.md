@@ -2,6 +2,17 @@
 
 > :electric_plug: A simple Vue.js mixin for telling whether a component has been mounted.
 
+## Install
+With npm:
+```js
+$ npm i vue-is-mounted
+```
+
+Or in the browser:
+```html
+<script src="https://cdn.jsdelivr.net/npm/vue-is-mounted@1.0.0/index.min.js"></script>
+```
+
 ## Usage
 
 ### Node.JS
